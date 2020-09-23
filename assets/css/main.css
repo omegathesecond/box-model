@@ -1,120 +1,87 @@
-*,
-:before,
-:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.container {
-
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0px;
-
-
-}
-
-.navigation-bar {
-    background-color: rgb(214, 208, 208);
-    height: 100px;
-    width: 1060px;
-    
-}
-
-.header {
-}
-
-.btn-nav {
-    display: inline-block;
-    font-weight: 700;
-    color: grey;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top:30px;
-    font-family: 'Poppins', sans-serif;
-
-
-
-}
-
-.btn-nav:hover{
-    background-color: red;
+code {
+    background-color: green;
+    border-radius: 6px;
     color: white;
-}
-
-
-.nav-logo-section {
-
-    /* display: inline-block;
-    width: 10%;
-    margin-left:0px; */
-    float: left;
+    display: block;
+    padding: 24px 15px;
+    text-align: center;
 
 }
 
-.nav-logo-img {
-    height: 80px;
-    width: 80px;
-    margin-top:10px;
+
+header,
+footer {
+    margin: 5px;
 }
 
-.btn-red{
-   background-color: red;
+footer {
+    margin-bottom: 0px;
+
+}
+
+section {
    color: white;
-}
-
-.btn-red:hover{
-    border: 3px solid white;
-    background-color: white;
-    color: red;
+    background-color: green;
 }
 
 
-.nav-buttons {
-    /* display: inline-block;
-    width: 90%;
-    margin-left: 0px; */
-    float:right;
-    
+.group:before,
+.group:after {
+    content: "";
+    display: table;
 }
 
-.banner{
-    height: 680px;
-    background-image: url("../images/bg-banner.png");
-    background-repeat: no-repeat;
-    background-size: 600px 500px;
-    background-position-y: center;
-   background-position-x: right;
+.group:after {
+    clear: both;
 }
 
-.banner-title{
-    color: lightblue;
-    font-size: 72px;
-    font-family: 'Poppins', sans-serif;
-    
+.group {
+    clear: both;
+    *zoom: 1;
+
+
+}
+
+.default {
+    background-color: rgb(228, 221, 221);
 }
 
 
+.col-1-3 {
+    width: 33.3%;
+}
 
-.banner-description{
-    color: rgb(90, 103, 105);
+.col-1-2 {
     width: 50%;
-    font-family: 'Poppins', sans-serif;
+
 }
 
-.banner-img{
-    width: 500px;
-    height: auto;
-    
-    padding-top: 100px;
+.col-1-4 {
+    width: 25%;
 }
 
-.btn-banner{
+.col-1-2,
+.col-1-3,
+.col-1-4 {
     display: inline-block;
-    text-decoration: none;
+    vertical-align: top;
+    border: 0px;
+}
+
+.grid,
+.col-1-2,
+.col-1-3,
+.col-1-4{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.grid, .container{
+    margin: 0 auto;
+    width: 960px;
+}
+
+.container{
+    padding-left: 30px;
+    padding-right: 30px;
 }
